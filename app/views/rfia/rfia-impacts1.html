@@ -25,38 +25,37 @@
     <div class="column-two-thirds">
     
       <div class="heading-group">
-        <h1 class="heading-large">Details of request</h1>
+        <h1 class="heading-large">Impacts of request</h1>
       </div>
         
         <div class="form-group">
             <label class="form-label-bold" for="example-form-label">
-              Enter a title for your request
+              Are there any other locations, services or systems impacted?
             </label>
+
+            <p>Enter any other locations, services or systems impacted by this request</p>
             <input class="form-control" id="example-form-label" type="text">
-          </div>
-        
-        <div class="form-group">
-            <label class="form-label-bold" for="textarea-c">
-              Enter a full description of the change
-            </label>
-            <ul class="list list-bullet">
-                <li>Give some background to enable CAPITA to understand why the change is being raised</li>
-                <li>Detail the requirements of the change</li>
-                <li>The Reason for the change</li>
-            </ul>
-<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+            <br>
+            <br>
+            <a href="">+ Add another location, service or system</a>
           </div>
         
         <form>
   <div class="form-group">
     <fieldset class="inline">
 
+<!--
+      <legend>
+        <h1 class="heading-medium">
+          Are there any DR and BCP implications?
+        </h1>
+      </legend>
+-->
         
-                    <label class="form-label-bold" for="textarea-c">
-              Has this request been assessed before?
+                    <label class="form-label-bold" for="example-form-label">
+              Are there any DR and BCP implications?
             </label>
-        
-        <p>Click yes if this is a revision of a previous request that failed its assessment</p>
+        <br>
 
       <div class="multiple-choice" data-target="beenAssessed">
         <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
@@ -67,11 +66,6 @@
         <label for="radio-inline-2">No</label>
       </div>
         
-              <div class="panel panel-border-narrow js-hidden" id="beenAssessed">
-        <label class="form-label-bold" for="contact-email">Previous PIP/RFIA number</label>
-                  <p>This is the unique identifier assigned to the request</p>
-        <input class="form-control" name="contact-email" type="text" id="contact-email">
-      </div>
         
                 <br>
         <br>
@@ -82,7 +76,7 @@
 </form>
       
       
-      <form action="rfia-dates" method="get" class="form">
+      <form action="rfia-signature" method="get" class="form">
 
 
         
