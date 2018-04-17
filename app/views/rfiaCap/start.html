@@ -1,0 +1,81 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+    <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">Alpha</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      <div class="heading-group">
+        <h1 class="heading-xlarge">Request for initial assessment</h1>
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <div class="text">
+        
+        <p>
+          Use this service to:
+        </p>
+        
+        <ul class="list list-bullet">
+          <li>View submitted requests for initial assessment</li>
+          <li>Respond to submitted requests for initial assessment</li>
+        </ul>
+        
+      </div>
+<!--
+<div class="panel panel-border-wide">
+  <p>
+    This should take less than 5 minutes.
+  </p>
+</div>
+-->
+      <form action="requests" method="get" class="form">
+
+          <div class="form-item-wrapper">
+            <div class="form-group">
+              <input class="button button-get-started" type="submit" value="Start">
+            </div>
+          </div>
+        
+        </form>
+        
+        <div>
+            
+<!--
+                    <h1 class="heading-medium">Before you start</h1>
+            <p>
+                Know what you're requesting, why you're requesting it and how it affects the business
+            </p>
+-->
+
+            
+            
+        </div>
+      
+ </div>
+      
+    </div>
+  
+</main>
+
+{% endblock %}
