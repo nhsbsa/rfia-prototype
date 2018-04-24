@@ -1,0 +1,110 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+    <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">Alpha</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      <div class="heading-group">
+        <h1 class="heading-xlarge">Request for initial assessment</h1>
+      </div>
+    </div>
+      
+      
+
+    <div class="column-two-thirds">
+<!--        <div class="info-panel highlight">-->
+        
+                <h1 class="heading-large">Make a new request</h1>
+        <p>Once submitted a member of Capita will review your request and respond with their decision.</p>
+        
+     
+
+      <form action="rfia-details" method="get" class="form">
+
+          <div class="form-item-wrapper">
+            <div class="form-group">
+              <input class="button" type="submit" value="Next">
+            </div>
+          </div>
+        
+        </form>
+        
+        <br>
+        <br>
+          <br>
+        
+         </div>
+      
+      <div class="column-full">
+        
+        <div class="info-panel highlight">
+        
+        <h1 class="heading-large">Track a request</h1>
+            
+            <p>If your request doesn't have an RFIA number search by title instead</p>
+        
+
+       <span class="form-label">RFIA number</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+
+
+       <span class="form-label">Title</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+
+        
+                    <div class="form-group">
+            <a class="button" id="search-button" href="#" role="button">Search</a>
+            </div>
+        
+              <table class="internal-table">
+          <tr>
+        <th>RFIA number</th>
+        <th>Title</th> 
+        <th>Response req</th>
+        <th>Start date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td><a href="rfia-view">123456789</a></td>
+        <td>My request 1</td> 
+        <td>12/03/2018</td>
+          <td>05/05/2018</td>
+          <td><a href="rfia-view">View response</a></td>
+      </tr>
+    </table>
+
+    <br>
+        
+
+        </div>
+      
+
+      
+    </div>
+  
+</main>
+
+{% endblock %}

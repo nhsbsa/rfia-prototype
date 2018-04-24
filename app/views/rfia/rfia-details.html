@@ -47,7 +47,43 @@
 <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
           </div>
         
+
+        
         <form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+        
+                    <label class="form-label-bold" for="textarea-c">
+              Do you have budget approval?
+            </label>
+        
+        <p>Click yes if this request has been given budget approval. If budget approval has not been given this may cause delays to your request</p>
+
+      <div class="multiple-choice" data-target="beenApproved">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" checked>
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+        
+              <div class="panel panel-border-narrow js-hidden" id="beenApproved">
+        <label class="form-label-bold" for="contact-email">Budget code</label>
+                  <p>Enter the budget code that was provided with approval</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                <br>
+        <br>
+                <br>
+
+    </fieldset>
+  </div>
+</form>
+        
+                <form>
   <div class="form-group">
     <fieldset class="inline">
 
@@ -80,6 +116,8 @@
     </fieldset>
   </div>
 </form>
+        
+        
       
       
       <form action="rfia-dates" method="get" class="form">
