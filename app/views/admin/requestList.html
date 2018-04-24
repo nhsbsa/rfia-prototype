@@ -1,0 +1,88 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+    <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">Alpha</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+    </div>
+  </div>
+
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+      <div class="heading-group">
+        <h1 class="heading-xlarge">Request for initial assessment</h1>
+      </div>
+    </div>
+      
+      
+      <div class="column-full">
+        
+        <h1 class="heading-large">Latest requests</h1>
+            
+        
+              <table class="internal-table">
+          <tr>
+        <th>RFIA number</th>
+        <th>Title</th> 
+        <th>Response req</th>
+        <th>Start date</th>
+        <th>Status</th>
+              <th></th>
+      </tr>
+      <tr>
+        <td><a href="rfia-view">423456789</a></td>
+        <td>My request 3</td>
+        <td>12/03/2018</td>
+          <td>05/05/2018</td>
+          <td>In Review</td>
+          <td><a href="#">Delete</a></td>
+      </tr>
+                        <tr>
+        <td><a href="rfia-view">323456789</a></td>
+        <td>My request 2</td> 
+        <td>12/03/2018</td>
+          <td>05/05/2018</td>
+          <td>In Review</td>
+                                      <td><a href="#">Delete</a></td>
+      </tr>
+                        <tr>
+        <td><a href="rfia-view">223456789</a></td>
+        <td>My request 1</td> 
+        <td>12/03/2018</td>
+          <td>05/05/2018</td>
+          <td>In Review</td>
+                                      <td><a href="#">Delete</a></td>
+      </tr>
+                        <tr>
+        <td><a href="rfia-view">123456789</a></td>
+         <td>My request</td>
+        <td>12/03/2018</td>
+          <td>05/05/2018</td>
+          <td>Approved</td>
+                                      <td><a href="#">Delete</a></td>
+      </tr>
+    </table>
+
+    <br>
+        
+</div>
+      
+    </div>
+  
+</main>
+
+{% endblock %}
