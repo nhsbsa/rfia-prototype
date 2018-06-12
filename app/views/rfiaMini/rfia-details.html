@@ -1,0 +1,206 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="requests">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Details of request</h1>
+      </div>
+        
+        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Enter a title for your request
+            </label>
+            <input class="form-control" id="example-form-label" type="text">
+          </div>
+        
+        <div class="form-group">
+            <label class="form-label-bold" for="textarea-c">
+              Enter a full description of the change
+            </label>
+            <ul class="list list-bullet">
+                <li>Give some background to enable CAPITA to understand why the change is being raised</li>
+                <li>Detail the requirements of the change</li>
+                <li>The Reason for the change</li>
+                <br>
+                <a href="guidance" target="_blank">Click for extra guidance (opens in new tab)</a>
+            </ul>
+            
+            <textarea class="form-control" id="textarea-a" cols="30" rows="10" style="margin: 0px 326px 0px 0px; width: 100%; height: 290px;"></textarea>
+<!--<textarea class="form-control form-control-1-2" name="textarea" id="textarea" rows="5"></textarea>-->
+          </div>
+        
+
+        
+        <form>
+            
+                    <div class="form-group">
+            <fieldset>
+              <legend>
+                <span class="form-label-bold">Start date CON delivery:</span>
+                  <p>Enter the date that delivery should start on</p>
+                <span class="form-hint">For example, 31 3 1980</span>
+              </legend>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label class="form-label" for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-month">
+                  <label class="form-label" for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-year">
+                  <label class="form-label" for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        
+                <div class="form-group">
+            <fieldset>
+              <legend>
+                <span class="form-label-bold">What is the latest business critical deadline?</span>
+                  <p>Enter the latest date that the CON can be delivered by</p>
+                <span class="form-hint">For example, 31 3 1980</span>
+              </legend>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label class="form-label" for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-month">
+                  <label class="form-label" for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-year">
+                  <label class="form-label" for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+  <div class="form-group">
+    <fieldset class="inline">
+
+        
+                    <label class="form-label-bold" for="textarea-c">
+              Do you have budget approval?
+            </label>
+        
+        <p>Click yes if this request has been given budget approval. If budget approval has not been given, click no, and provide the name of a project sponsor</p>
+
+      <div class="multiple-choice" data-target="beenApproved">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice" data-target="notApproved">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+        
+              <div class="panel panel-border-narrow js-hidden" id="beenApproved">
+        <label class="form-label-bold" for="contact-email">Budget code</label>
+                  <p>Enter the budget code that was provided with approval</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                      <div class="panel panel-border-narrow js-hidden" id="notApproved">
+        <label class="form-label-bold" for="contact-email">Project sponsor</label>
+                  <p>Enter the name of the project sponsor</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                <br>
+        <br>
+                <br>
+
+    </fieldset>
+  </div>
+</form>
+        
+                <form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+        
+                    <label class="form-label-bold" for="textarea-c">
+              Has this request been assessed before?
+            </label>
+        
+        <p>Click yes if this is a revision of a previous request that failed its assessment</p>
+
+      <div class="multiple-choice" data-target="beenAssessed">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+        
+              <div class="panel panel-border-narrow js-hidden" id="beenAssessed">
+        <label class="form-label-bold" for="contact-email">Previous PIP/RFIA number</label>
+                  <p>This is the unique identifier assigned to the request</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                <br>
+        <br>
+                <br>
+
+    </fieldset>
+  </div>
+</form>
+        
+        
+      
+      
+      <form action="rfia-dates" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}
