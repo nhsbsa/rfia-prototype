@@ -1,0 +1,334 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHSBSA Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service 
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+      </p> 
+    </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="#" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Check your answers before submitting your request
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">
+        Details of request
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Title of request
+          </dt>
+          <dd class="cya-answer">
+            Request 1
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-details">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Description
+          </dt>
+          <dd class="cya-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              <br>
+              <br>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                            <br>
+              <br>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-details">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Do you have budget approval?
+          </dt>
+          <dd class="cya-answer">
+              Yes
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-details">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+          
+                  <div>
+          <dt class="cya-question">
+            Budget code
+          </dt>
+          <dd class="cya-answer">
+              123456789
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-details">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Has this request been made before?
+          </dt>
+          <dd class="cya-answer">
+No
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-details">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="heading-medium">
+        Dates for request
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Start date CON delivery
+          </dt>
+          <dd class="cya-answer">
+            31 3 2017
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-dates">
+              Change<span class="visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Latest business critical deadline
+          </dt>
+          <dd class="cya-answer">
+            31 3 2017
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-dates">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+        
+              <h2 class="heading-medium">
+        Impacts of request
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Locations affected
+          </dt>
+          <dd class="cya-answer">
+                    <ul class="list list-bullet">
+          <li>Bridge House</li>
+          <li>Citygate</li>
+            <li>Eastbourne</li>
+        </ul>
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts">
+              Change<span class="visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Service areas affected
+          </dt>
+          <dd class="cya-answer">
+                                <ul class="list list-bullet">
+          <li>Change and commercial delivery</li>
+          <li>Contact center</li>
+        </ul>
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+          
+                  <div>
+          <dt class="cya-question">
+            Systems impacted
+          </dt>
+          <dd class="cya-answer">
+                                            <ul class="list list-bullet">
+          <li>BOSS</li>
+          <li>CIP</li>
+        </ul>
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+          
+                            <div>
+          <dt class="cya-question">
+            Other locations, services or systems impacted
+          </dt>
+          <dd class="cya-answer">
+            
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+        
+              <h2 class="heading-medium">
+        Implications of request
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Are there any DR and BCP implications?
+          </dt>
+          <dd class="cya-answer">
+            Yes
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts1">
+              Change<span class="visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Are there any GDPR implications?
+          </dt>
+          <dd class="cya-answer">
+            Yes
+          </dd>
+          <dd class="cya-change">
+            <a href="rfia-impacts1">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+        
+                      <h2 class="heading-medium">
+        Requestor signature of requirements
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          <dd class="cya-answer">
+            Max Payne
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Position
+          </dt>
+          <dd class="cya-answer">
+            Product owner
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+          
+                  <div>
+          <dt class="cya-question">
+            Date
+          </dt>
+          <dd class="cya-answer">
+            31 3 2017
+          </dd>
+          <dd class="cya-change">
+
+          </dd>
+        </div>
+          
+                  <div>
+          <dt class="cya-question">
+            Email
+          </dt>
+          <dd class="cya-answer">
+            m.payne@nhs.net
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <h2 class="heading-medium">Now submit your request</h2>
+
+      <p class="text">
+        If everything is correct submit your request. You should recieve a confirmation email once your request has been submitted. This email will display your request in a similar format as above
+      </p>
+
+      <div class="form-group">
+        <a href="end" class="button">Submit</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
