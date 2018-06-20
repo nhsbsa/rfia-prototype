@@ -1,0 +1,101 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="rfia-view">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+          <p>RFIA: 123456789</p>
+        <h1 class="heading-large">My request 1</h1>
+      </div>
+
+              <h3 class="heading-medium">Locations affected</h3>
+        
+                <ul class="list list-bullet">
+          <li>Bridge House</li>
+          <li>Citygate</li>
+        </ul>
+        
+                  <p class="navigation"><a class="cancel" href="rfia-impacts">Edit</a></p>
+
+        
+        <h3 class="heading-medium">Service areas affected</h3>
+        
+                        <ul class="list list-bullet">
+          <li>Change and commercial delivery</li>
+          <li>Contact centre</li>
+        </ul>
+        
+                  <p class="navigation"><a class="cancel" href="rfia-impacts">Edit</a></p>
+
+        
+                      <h3 class="heading-medium">Systems impacted</h3>
+        
+                               <ul class="list list-bullet">
+          <li>BOSS</li>
+          <li>CIP</li>
+        </ul>
+        
+                  <p class="navigation"><a class="cancel" href="rfia-impacts">Edit</a></p>
+
+        
+                              <h3 class="heading-medium">Other locations, services or systems impacted</h3>
+        
+                               <ul class="list list-bullet">
+                                   <li>Another system</li>
+        </ul>
+        
+                  <p class="navigation"><a class="cancel" href="rfia-impacts1">Edit</a></p>
+
+        
+        <h3 class="heading-medium">Are there any DR and BCP implications?</h3>
+        
+        <p>No</p>
+        
+                  <p class="navigation"><a class="cancel" href="rfia-impacts1">Edit</a></p>
+
+
+
+      <form action="rfia-view2" method="get" class="form">
+        
+        <div>
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

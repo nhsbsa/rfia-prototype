@@ -1,0 +1,132 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="locations">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Services affected</h1>
+      </div>
+            
+        <p>Select the locations of the business that will be affected by the request</p>
+
+<fieldset class="form-group">
+          <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Change and Commercial Delivery</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">Contact Centre</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Corporate Services</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Customer Insight and Communications</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">Dental Services</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Enterprise Architecture</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Finance</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">HR</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Information Services</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">NHS Pension</label>
+          </div>
+                  <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">NHS Prescription Services</label>
+          </div>
+                  <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">NHS Protect</label>
+          </div>
+                  <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Patient Services</label>
+          </div>
+                  <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Strategic Sourcing</label>
+          </div>
+                  <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Student Services</label>
+          </div>
+                      <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Supply Chain</label>
+          </div>
+                      <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Technology Solutions</label>
+          </div>
+
+        </fieldset>
+        
+      
+      
+      <form action="systems" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

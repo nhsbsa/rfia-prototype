@@ -1,0 +1,96 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="requests">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Help for creating RFIA's</h1>
+      </div>
+        
+        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              What kind of project or change requires an RFIA to be created?
+            </label>
+          </div>
+            <p>An RFIA is required if a project or change has a big impact upon the business or requires many resources to complete. For example you would create an RFIA to move a large project team and it's resources from one building to another or to equip a large project team with expensive software licences.</p>
+        <p>The RFIA process is not necessary for small projects or changes. For example, you wouldnt create an RFIA for one person to be issued a laptop. You may not even need an RFIA to create a small service that will be used by only a handful of staff in one building.</p>
+        
+                <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              How to write a description
+            </label>
+          </div>
+        <p>The description should cover three main areas:</p>
+                          <ul class="list list-bullet">
+            <li>The background of the request</li>
+            <li>The specific requirements of the request</li>
+            <li>The reason the change is required</li>
+  </ul>
+        <p>It's important to be as specific as possible. For example, in the requirements you will need to include the hardware and/or software licences that you know to be required and in what quantity.</p>
+        
+<!--
+                        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              What questions should the description answer?
+            </label>
+          </div>
+-->
+        
+                                                <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Dates for the request
+            </label>
+          </div>
+<!--        <p>'Response required by' refers to the date you require a response, from Capita, to this initial request</p>-->
+        <p>CON delivery refers to when you require the contractual agreement should start</p>
+        <p>'latest business critical deadline' refers to the very latest that the contractual agreement can start on</p>
+        <p>All dates are aspirational and may be affected by other requests being processed by Capita. It may take up to 21 days for a project to get to CON delivery</p>
+        
+                                <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Implications
+            </label>
+          </div>
+        <p>Disaster recovery and business continuity plans set out the processes that are followed to recover critical services that have been affected by disasters or by major business changes. Your request will have implications on these plans if it affects how they will need to be performed</p>
+        <p>If the request will affect how data and/or information is stored, handled or processed then it will be affected by GDPR. You should ensure that the GDPR team is informed of the request</p>
+        
+                                        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              How to contact us
+            </label>
+          </div>
+        <p>If you need any more help or you want to ask about a submitted request</p>
+                  <ul class="list list-bullet">
+            <li>Attend the workshop in GR3 on Wednesday at 11.00</li>
+            <li>Email us at: angelapurves@nhs.net</li>
+            <li>Call us on: 0191 203 5268</li>
+  </ul>
+
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

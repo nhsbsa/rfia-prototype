@@ -1,0 +1,104 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="rfia-dates">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Locations affected</h1>
+      </div>
+            
+        <p>Select the locations of the business that will be affected by the request</p>
+
+<fieldset class="form-group">
+          <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Bridge House</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">Citygate</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Eastbourne</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Fleetwood</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">Mansfield</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Middlebrook</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true"  >
+            <label for="email">Skipton House</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true"  >
+            <label for="text">Stella House</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Wakefield</label>
+          </div>
+              <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">Warehouse</label>
+          </div>
+
+        </fieldset>
+        
+      
+      
+      <form action="services" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

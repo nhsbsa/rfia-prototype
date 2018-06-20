@@ -1,0 +1,105 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="rfia-impacts1">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Requestor signature of requirements</h1>
+      </div>
+        
+        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Name
+            </label>
+            <p>Enter the name of the person making the request</p>
+            <input class="form-control" id="example-form-label" type="text">
+          </div>
+        
+                <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Position
+            </label>
+                    <p>Enter the position or role of the person making the request</p>
+            <input class="form-control" id="example-form-label" type="text">
+          </div>
+        
+
+        <div class="form-group">
+            <fieldset>
+              <legend>
+                <span class="form-label-bold">Date</span>
+              </legend>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label class="form-label" for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" value="25" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-month">
+                  <label class="form-label" for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" value="04" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-year">
+                  <label class="form-label" for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" value="2018" pattern="[0-9]*">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        
+                        <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Email address
+            </label>
+                    <p>Enter an email address for confirmation that we have received your request</p>
+            <input class="form-control" id="example-form-label" type="text">
+          </div>
+
+      
+      
+      <form action="check-your-answers" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Check your answers">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}
