@@ -29,57 +29,6 @@
       </div>
             
         <p>Select the parts of the business that will be affected by the request</p>
-
-
-                <div class="form-group">
-            <label class="form-label-bold" for="example-form-label">
-              Locations affected
-            </label>
-                    <br>
-              <select class="form-control" id="select-box" name="select-box">
-                  <option>None</option>
-                  <option>All</option>
-  <option>Bridge House</option>
-  <option>Citygate</option>
-  <option>Eastbourne</option>
-  <option>Fleetwood</option>
-      <option>Mansfield</option>
-  <option>Middlebrook</option>
-  <option>Skipton House</option>
-      <option>Stella House</option>
-  <option>Wakefield</option>
-  <option>Warehouse</option>
-  </select>
-                    
-                   <br> <br> 
-
-                    <div id="location" class="hidden">
-                                                      <select class="form-control" id="select-box" name="select-box">
-   <option selected hidden></option>
-  <option>Bridge House</option>
-  <option>Citygate</option>
-  <option>Eastbourne</option>
-  <option>Fleetwood</option>
-      <option>Mansfield</option>
-  <option>Middlebrook</option>
-  <option>Skipton House</option>
-      <option>Stella House</option>
-  <option>Wakefield</option>
-  <option>Warehouse</option>
-  </select>
-                    <a class="link" onclick="locationRemove()">remove</a>
-                    <br>
-                    <br>
-                        
-                        </div>
-                    
-
-                    
-                    <a class="link" onclick="locationReveal()">+ Add another location</a>
-                    
-                    
-          </div>
-        
         
                         <div class="form-group">
             <label class="form-label-bold" for="example-form-label">
@@ -87,7 +36,7 @@
             </label>
                     <br>
               <select class="form-control" id="select-box" name="select-box">
-                  <option>None</option>
+    <option>None</option>
                   <option>All</option>
   <option>Change and Commercial Delivery</option>
   <option>Contact Centre</option>
@@ -144,73 +93,13 @@
                             <a class="link" onclick="serviceReveal()">+ Add another service area</a>
           </div>
         
-        
-        
-                                <div class="form-group">
-            <label class="form-label-bold" for="example-form-label">
-              Systems impacted
-            </label>
-                    <br>
-              <select class="form-control" id="select-box" name="select-box">
-    <option>None</option>
-                  <option>All</option>
-  <option>BOSS</option>
-  <option>CIP</option>
-  <option>Compass</option>
-  <option>ESR</option>
-      <option>Integra</option>
-  <option>Wintime</option>
-  </select>
+    
 
-                                    <br>
-                                    <br>
-                                    
-                                                                                                        <div id="system" class="hidden">
-              <select class="form-control" id="select-box" name="select-box">
-    <option selected hidden></option>
-  <option>BOSS</option>
-  <option>CIP</option>
-  <option>Compass</option>
-  <option>ESR</option>
-      <option>Integra</option>
-  <option>Wintime</option>
-  </select>
-                    <a class="link" onclick="systemRemove()">remove</a>
-                    <br>
-                    <br>
-                        
-                        </div>
-                    
-
-                                    <a class="link" onclick="systemReveal()">+ Add another system</a>
-          </div>
-
-                <div class="form-group">
-            <label class="form-label-bold" for="example-form-label">
-              Are there any other locations, services or systems impacted?
-            </label>
-<br>
-            <input class="form-control" id="example-form-label" type="text">
-            <br>
-            <br>
-                    
-                                                                    <div id="another" class="hidden">
-<input class="form-control" id="example-form-label" type="text">
-                    <a class="link" onclick="removeAnother()">remove</a>
-                    <br>
-                    <br>
-                        
-                        </div>
-                    
-
-                    
-            <a class="link" onclick="addAnother()">+ Add another location, service or system</a>
-          </div>
         
         
       
       
-      <form action="rfia-impacts1" method="get" class="form">
+      <form action="check-your-answers" method="get" class="form">
 
 
         

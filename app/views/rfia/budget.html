@@ -1,0 +1,100 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="requests">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Details of request</h1>
+      </div>
+        
+        <form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+        
+                    <label class="form-label-bold" for="textarea-c">
+              Do you have budget approval?
+            </label>
+        
+        <p>Click yes if this request has been given budget approval. If budget approval has not been given, click no, and provide the name of a project sponsor</p>
+
+      <div class="multiple-choice" data-target="beenApproved">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice" data-target="notApproved">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+        
+              <div class="panel panel-border-narrow js-hidden" id="beenApproved">
+        <label class="form-label-bold" for="contact-email">Budget code</label>
+                  <p>Enter the budget code that was provided with approval</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                      <div class="panel panel-border-narrow js-hidden" id="notApproved">
+        <label class="form-label-bold" for="contact-email">Project sponsor</label>
+                  <p>Enter the name of the project sponsor</p>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+        
+                <br>
+        <br>
+                <br>
+
+    </fieldset>
+  </div>
+</form>
+        
+
+        
+      
+      
+      <form action="check-your-answers" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

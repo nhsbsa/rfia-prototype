@@ -1,0 +1,92 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="rfia-details">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Dates for request</h1>
+      </div>
+        
+        <div class="panel panel-border-wide">
+        
+<p>All dates are aspirational and may be affected by other requests being processed by Capita. It may take up to 21 days for a project to get to CON delivery</p>
+                        
+                
+      </div>
+        
+            <a href="guidance" target="_blank">Click for extra guidance (opens in new tab)</a>
+        <br>
+        <br>
+
+                <div class="form-group">
+            <fieldset>
+              <legend>
+                <span class="form-label-bold">What is the latest business critical deadline?</span>
+                  <p>Enter the latest date that the CON can be delivered by</p>
+                <span class="form-hint">For example, 31 3 1980</span>
+              </legend>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label class="form-label" for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-month">
+                  <label class="form-label" for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                </div>
+                <div class="form-group form-group-year">
+                  <label class="form-label" for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+      
+      
+      <form action="rfia-impacts" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+</main>
+
+{% endblock %}

@@ -1,0 +1,154 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Request initial assessment
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">BETA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+      <a class="link-back" href="rfia-dates">Back</a>
+    </div>
+  </div>
+    
+  <div class="grid-row">
+    
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+        <h1 class="heading-large">Impacts of request</h1>
+      </div>
+            
+        <p>Select the parts of the business that will be affected by the request</p>
+
+
+                <div class="form-group">
+            <label class="form-label-bold" for="example-form-label">
+              Locations affected
+            </label>
+                    <br>
+              <select class="form-control" id="select-box" name="select-box">
+                  <option>None</option>
+                  <option>All</option>
+  <option>Bridge House</option>
+  <option>Citygate</option>
+  <option>Eastbourne</option>
+  <option>Fleetwood</option>
+      <option>Mansfield</option>
+  <option>Middlebrook</option>
+  <option>Skipton House</option>
+      <option>Stella House</option>
+  <option>Wakefield</option>
+  <option>Warehouse</option>
+  </select>
+                   <br> <br> 
+
+                    <div id="location" class="hidden">
+                                                      <select class="form-control" id="select-box" name="select-box">
+  <option>Bridge House</option>
+  <option>Citygate</option>
+  <option>Eastbourne</option>
+  <option>Fleetwood</option>
+      <option>Mansfield</option>
+  <option>Middlebrook</option>
+  <option>Skipton House</option>
+      <option>Stella House</option>
+  <option>Wakefield</option>
+  <option>Warehouse</option>
+  </select>
+                    <a class="link" onclick="locationRemove()">remove</a>
+                    <br>
+                    <br>
+                        
+                        </div>
+                    
+
+                    
+                    <a class="link" onclick="locationReveal()">+ Add another location</a>
+                    
+                    
+          </div>
+
+        
+
+
+        
+        
+      
+      
+      <form action="check-your-answers" method="get" class="form">
+
+
+        
+        <div>
+
+
+        </div>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="cancel">Cancel</a></p>
+        
+      </form>
+    </div>
+    
+  </div>
+    
+    <script>
+function locationReveal() {
+    var element = document.getElementById("location");
+    element.classList.remove("hidden");
+}
+
+function serviceReveal() {
+    var element = document.getElementById("service");
+    element.classList.remove("hidden");
+}
+
+function systemReveal() {
+    var element = document.getElementById("system");
+    element.classList.remove("hidden");
+}
+
+function addAnother() {
+    var element = document.getElementById("another");
+    element.classList.remove("hidden");
+}
+        function locationRemove() {
+    var element = document.getElementById("location");
+    element.classList.add("hidden");
+}
+
+function serviceRemove() {
+    var element = document.getElementById("service");
+    element.classList.add("hidden");
+}
+
+function systemRemove() {
+    var element = document.getElementById("system");
+    element.classList.add("hidden");
+}
+
+function removeAnother() {
+    var element = document.getElementById("another");
+    element.classList.add("hidden");
+}
+</script>
+  
+</main>
+
+{% endblock %}
